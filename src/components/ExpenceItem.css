@@ -1,0 +1,22 @@
+.expence-item{
+display: flex;
+justify-content: space-between;
+align-items: center;
+ box-shadow: 0px 2px 8px  ;
+ padding: 0.3rem;
+ margin: 10px 10px;
+ border-radius: 12px;
+ background-color: #636e72;
+ color: white;
+ width: 90%;
+ font-size: 1rem;
+}
+.expence-item__price{
+font-size: 1rem;
+font-weight: bold;
+background-color: #dfe6e9;
+border: 1px solid black;
+padding: 0.5rem 1rem;
+border-radius: 12px;
+color: purple;
+}
