@@ -1,3 +1,4 @@
+import "./components/App.css";
 import React from "react";
 import Expenses from "./components/Expenses";
 
@@ -34,7 +35,7 @@ let expenses = [
 
   return (
     <div>
-      
+         <h2 className="head">let's get started</h2>
     <Expenses  item={expenses}/>
     </div>
   );
