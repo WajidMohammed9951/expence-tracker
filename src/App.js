@@ -35,7 +35,7 @@ let expenses = [
 
   return (
     <div>
-         <h2 className="head">let's get started</h2>
+         <h2 className="head">let's get start</h2>
     <Expenses  item={expenses}/>
     </div>
   );
