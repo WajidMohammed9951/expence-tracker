@@ -5,13 +5,17 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "./Card";
 
 const ExpenseItem = (props) => {
-  const [title, setTitle] = useState(props.title)
+
+  const [newTitle, setNewTitle] = useState("");
+  const [title, setTitle] = useState(props.title);
 
 
   const clickHandler = () => {
-   setTitle('New Title..');
+   setTitle(newTitle);
 
-
+  }
+  const changeHandler = (event) => {
+    setNewTitle(event.target.value);
   }
   return (
     <div className="expence-item">
@@ -20,6 +24,9 @@ const ExpenseItem = (props) => {
         <h2>{title}</h2>
       </div>
       <div className="expence-item__price">${props.amount}</div>
+
+      <input type="text" value={newTitle} onChange = {changeHandler}/>
+       
       <button onClick={clickHandler}>change title</button>
     </div>
   );
