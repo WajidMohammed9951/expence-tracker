@@ -1,6 +1,6 @@
-import "./components/App.css";
 import React from "react";
 import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 
 
@@ -35,7 +35,8 @@ let expenses = [
 
   return (
     <div>
-         <h2 className="head">let's get start</h2>
+         
+     <NewExpense></NewExpense>
     <Expenses  item={expenses}/>
     </div>
   );
