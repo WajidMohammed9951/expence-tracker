@@ -5,9 +5,14 @@ import ExpenseForm from './ExpenseForm'
 
 
  const NewExpense = () => {
+
+  const saveExpenseDataHandler = (enteredExpenseData) => {
+ console.log(enteredExpenseData)
+
+  };
   return (
     <div className='new-expense'>
-      <ExpenseForm></ExpenseForm>
+      <ExpenseForm onSaveExpenseData = {saveExpenseDataHandler}/>
     </div>
   );
 };
