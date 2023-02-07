@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Expenses from "./components/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 
 
 const  App = () => {
-let expenses = [
+let DUMMY_EXPENSE = [
   {
   id: 'e1',
   title:'school fee',
@@ -31,8 +31,12 @@ let expenses = [
   date:'new Date(2022, 5, 5)'
 }
 ]
+ 
+const [expenses,setExpenses] = useState(DUMMY_EXPENSE);
+
 const addExpenseHandler = (expense) => {
-  console.log(expense);
+  const updatedExpense = [expense, ...expenses];
+  setExpenses(updatedExpense);
 };
   
 
