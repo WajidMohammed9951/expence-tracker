@@ -31,12 +31,14 @@ let expenses = [
   date:'new Date(2022, 5, 5)'
 }
 ]
+const addExpenseHandler = (expense) => {
+  console.log(expense);
+};
   
 
   return (
     <div>
-         
-     <NewExpense></NewExpense>
+     <NewExpense onAddExpense={addExpenseHandler} />
     <Expenses  item={expenses}/>
     </div>
   );
